@@ -22,7 +22,8 @@ serve(() => new Response("Deno ping server running"), { port: 8000 });
 console.log("Deno server is running and will ping the Render server health endpoint every 5 minutes");
 
 // Set interval to ping the health endpoint every 5 minutes (300,000 ms)
-setInterval(pingHealthEndpoint, 300000);
+// Set interval to ping the health endpoint every 1 minute (60,000 ms)
+setInterval(pingHealthEndpoint, 60000);
 
 // Set interval to ping the health endpoint every 30 seconds (30,000 ms)
 // setInterval(pingHealthEndpoint, 30000);
